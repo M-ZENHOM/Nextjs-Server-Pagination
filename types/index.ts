@@ -2,11 +2,14 @@ export type SiteConfig = {
   name: string
   description: string
   url: string
-  ogImage: string
   links: {
     twitter: string
     github: string
   }
+  header: [
+    { href: string, label: string },
+    { href: string, label: string }
+  ]
 }
 
 

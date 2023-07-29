@@ -16,8 +16,8 @@ const loading = () => {
                     </div>
                 </div>
                 <div className='grid grid-cols-fluid gap-5 '>
-                    {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => (
-                        <Card className="w-[300px]">
+                    {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((h, i) => (
+                        <Card key={i} className="w-[300px]">
                             <CardHeader>
                                 <CardTitle> <Skeleton className="h-4 w-[250px]" /></CardTitle>
                                 <CardDescription> <Skeleton className="h-4 w-[200px]" /></CardDescription>

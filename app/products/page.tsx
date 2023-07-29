@@ -64,7 +64,7 @@ const Products: FC<pageProps> = async ({ searchParams }) => {
 
                 <div className='grid grid-cols-fluid gap-5 place-items-center'>
                     {products.length > 0 ? products?.map((item: Item) => (
-                        <ProductCard item={item} />
+                        <ProductCard key={item.id} item={item} />
                     )) : (
                         <h2 className=' text-gray-500'>There's no products match your search!</h2>
                     )}
