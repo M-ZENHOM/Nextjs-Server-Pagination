@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { FC } from 'react'
 import { ModeToggle } from './ModeToggle'
 import { siteConfig } from '@/config/site'
@@ -11,7 +10,7 @@ const SiteHeader: FC = () => {
             <nav className='container flex items-center justify-between'>
                 <ul className='flex space-x-6'>
                     {siteConfig.header.map((h, i) => (
-                        <ActiveLink activeClassName='border-b border-b-4' key={i} href={h.href}>{h.label}</ActiveLink>
+                        <ActiveLink activeClassName='border-b' key={i} href={h.href}>{h.label}</ActiveLink>
                     ))}
                 </ul>
                 <ModeToggle />
