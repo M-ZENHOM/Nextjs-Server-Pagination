@@ -38,7 +38,7 @@ const Products: FC<pageProps> = async ({ searchParams }) => {
                     {products.length > 0 ? products?.map((item: Item) => (
                         <ProductCard key={item.id} item={item} />
                     )) : (
-                        <h2 className=' text-gray-500'>There's no products match your search!</h2>
+                        <h2 className=' text-gray-500'>There is no products match your search!</h2>
                     )}
                 </div>
             </div>
